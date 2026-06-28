@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./asset/header-image.png);
+    background-size:contain;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 8%;
+    position: relative;
+}
+.nav{
+   display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 10px 0; */
+}
+
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+.lang-btn img {
+    width: 10px;
+    margin-left: 10px;
+} 
+
+.fa-globe {
+    color: #fff;
+    width: 10px;
+    margin-right: 10px;
+}
+.lang-btn {
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 7px 10px;
+    outline: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.signup {
+    border: none;
+    outline: none;
+    background-color: #db0001;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.header-content{
+    position: absolute;
+    top: 60%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+    max-width: 700px;
+}
+.header-content h1{
+    font-size: 60px;
+    font-weight: 790;
+    letter-spacing: 2px;
+    line-height: 70px;
+    max-width: 750px;
+
+}
+.header-content h3{
+    margin-top: 1px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.header-content p{
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.email-signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-signup input{
+    width: 60%;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 8px 0 0 8px;
+}
+
+.email-signup button{
+    padding: 15px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 0 8px 8px 0; 
+    outline: none;
+    background-color: #db0001;
+    color: #fff;
+    cursor: pointer;
+}
+.features {
+    padding: 50px 12%;
+    font-size: 22px;
+    background-color: #000;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.text-col, .img-col {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.img-col img {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+.features h2 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.faq{
+    padding: 50px 18%;
+    font-size: 22px;
+    background-color: #000;
+    color: #fff;
+    /* display: flex; */
+}
+.item{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding: 50px 0;
+}
+.faq h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.list{
+    margin-top: 30px;
+}
+.list label{
+    display: block;
+    background-color: #303030;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid #404040;
+    cursor: pointer;
+    position: relative;
+} 
+
+.list label::after{
+    content: '\002b';
+    position: absolute;
+    right: 20px;
+    font-size: 30px;
+}
+.list input[type="radio"]{
+    display: none;
+}
+
+.content p{
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    background-color: #404040;
+    font-size: 16px;
+    border: 1px solid #505050;
+    margin-top: -5px;
+    transition: all 0.5s ease;
+}
+
+.list input[type="radio"]:checked ~ .content p{
+    max-height: 500px;
+    padding: 20px;
+    margin: 5px 0;
+}
+
+.list input[type="radio"]:checked ~ label::after{
+    content: '\002d';
+}
+
+.info p{
+    font-size: 16px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.footer{
+    background-color: #000;
+    color: #777;
+    /* text-align: center; */
+    padding: 20px 200px;
+    font-size: 14px;
+    border-top: 5px solid #333;
+
+}
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.footer .row{
+    align-items: flex-start;
+    padding: 20px 0px;
+}
+.footer .row .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.footer .col a{
+    display: block;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
